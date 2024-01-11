@@ -37,7 +37,7 @@ VALUES
 	('', '', 'Blazo')
 RETURNING *;
 
-INSERT INTO track_1 (name, length, album_id)
+INSERT INTO track (name, length, album_id)
 VALUES
 	('Перемен', 295, 1),	
 	('Группа крови', 239, 1),
@@ -57,14 +57,14 @@ VALUES
 	('Liquid Silver', 254, 10)
 RETURNING *;
 
-INSERT INTO genre_1 (name)
+INSERT INTO genre (name)
 VALUES 
 	('Jazz'),
 	('поп'),
 	('блюз'),
 	('шансон');
 	
-INSERT INTO collection_1 (title, release_year)
+INSERT INTO collection (title, release_year)
 VALUES 
 	('Jazz', 2017),
 	('Дискотека 70-х, 80-х, 90-х', 2016),
@@ -76,7 +76,7 @@ VALUES
 	('Золото шансона', 2015),
 	('Russian Rock Legends Vol. 4', 2018);
 
-INSERT INTO artist_1 (first_name, second_name, alias)
+INSERT INTO artist (first_name, second_name, alias)
 VALUES 
 	('Miles', 'Davis', ''),
 	('Duke', 'Ellington', ''),
@@ -106,7 +106,7 @@ VALUES
 	('', '', 'Чёрный кофе');
 
 
-INSERT INTO track_1 (name, length)
+INSERT INTO track (name, length)
 VALUES
 	('Moon Dreams', 200),
 	('Caravan 1986 Digital Remaster', 254),
